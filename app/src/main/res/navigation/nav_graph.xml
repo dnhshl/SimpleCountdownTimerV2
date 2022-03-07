@@ -12,10 +12,20 @@
         <action
             android:id="@+id/action_settimerFragment_to_showtimerFragment"
             app:destination="@id/showtimerFragment" />
+
     </fragment>
     <fragment
         android:id="@+id/showtimerFragment"
         android:name="com.example.simplecountdowntimer.ShowtimerFragment"
         android:label="@string/showtimer_fragment_label"
-        tools:layout="@layout/fragment_showtimer" />
+        tools:layout="@layout/fragment_showtimer" >
+        <argument
+            android:name="timerTitel"
+            app:argType="string"
+            android:defaultValue='"abc"' />
+        <argument
+            android:name="timerTime"
+            app:argType="string"
+            android:defaultValue='"123"' />
+    </fragment>
 </navigation>
