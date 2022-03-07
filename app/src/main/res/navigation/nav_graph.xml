@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/settimerFragment">
+    <fragment
+        android:id="@+id/settimerFragment"
+        android:name="com.example.simplecountdowntimer.SettimerFragment"
+        android:label="@string/settimer_fragment_label"
+        tools:layout="@layout/fragment_settimer">
+        <action
+            android:id="@+id/action_settimerFragment_to_showtimerFragment"
+            app:destination="@id/showtimerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/showtimerFragment"
+        android:name="com.example.simplecountdowntimer.ShowtimerFragment"
+        android:label="@string/showtimer_fragment_label"
+        tools:layout="@layout/fragment_showtimer" />
+</navigation>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">SimpleCountdownTimer</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="settimer_fragment_label">Timer einstellen</string>
+    <string name="showtimer_fragment_label">Countdown</string>
+    <string name="btn_showtimer">Starte Countdown</string>
+    <string name="previous">Previous</string>
+    <string name="edit_titel_label">Termin</string>
+    <string name="edit_time_label">Zeit</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+</resources>
