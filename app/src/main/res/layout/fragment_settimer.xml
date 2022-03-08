@@ -15,7 +15,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/outlinedTextfield2" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_time" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/outlinedTextfield1"
@@ -39,25 +39,29 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/outlinedTextfield2"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="match_parent"
-        android:layout_height="61dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="300dp"
-        android:layout_marginEnd="50dp"
-        android:hint="@string/edit_time_label"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/tv_time_hint"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="@+id/outlinedTextfield1"
+        app:layout_constraintTop_toBottomOf="@+id/outlinedTextfield1"
+        tools:text="20:15 Uhr" />
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/edit_time"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="time"
-            android:textColorHint="#757575" />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_edit_time"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:insetLeft="0dp"
+        android:insetTop="0dp"
+        android:insetRight="0dp"
+        android:insetBottom="0dp"
+        app:icon="@drawable/ic_edit"
+        app:iconGravity="textStart"
+        app:iconPadding="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_time"
+        app:layout_constraintEnd_toEndOf="@+id/outlinedTextfield1" />
 
-    </com.google.android.material.textfield.TextInputLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
