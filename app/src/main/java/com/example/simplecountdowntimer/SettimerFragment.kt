@@ -33,13 +33,10 @@ class SettimerFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.btnShowtimer.setOnClickListener {
-
-            val timerTitel ="abc"
-            val timerTime ="20:15"
-            val action = SettimerFragmentDirections.actionSettimerFragmentToShowtimerFragment()
+            val action = SettimerFragmentDirections.actionSettimerFragmentToShowtimerFragment(
+                timerTitel = binding.editTitle.text.toString(),
+                timerTime = binding.editTime.text.toString())
             findNavController().navigate(action)
-
-            //findNavController().navigate(R.id.action_settimerFragment_to_showtimerFragment)
         }
     }
 

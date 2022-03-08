@@ -41,7 +41,6 @@ class ShowtimerFragment : Fragment() {
         val timerTime = args.timerTime
 
         Log.i(TAG, "Titel $timerTitel Time $timerTime")
-
     }
 
     override fun onDestroyView() {
