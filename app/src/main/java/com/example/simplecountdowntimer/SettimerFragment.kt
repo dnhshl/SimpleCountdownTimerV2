@@ -24,7 +24,7 @@ class SettimerFragment : Fragment() {
     private val binding get() = _binding!!
 
     private lateinit var time: LocalTime
-    private lateinit var timestring: String
+    private var timestring = "00:00"
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -42,7 +42,7 @@ class SettimerFragment : Fragment() {
         binding.btnShowtimer.setOnClickListener {
             val action = SettimerFragmentDirections.actionSettimerFragmentToShowtimerFragment(
                 timerTitel = binding.editTitle.text.toString(),
-                timerTime = binding.tvTime.text.toString())
+                timerTime = timestring)
             findNavController().navigate(action)
         }
 

@@ -14,6 +14,11 @@
     <string name="time_format_string">HH:mm</string>
     <string name="time_display">%s Uhr</string>
 
+    <string name="countdown_format_string">noch\n%02d:%02d:%02d</string>
+    <string name="countdown_display">noch\n%s\nSekunden</string>
+    <string name="countdown_display_over">ist schon vorbei</string>
+
+
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 </resources>
